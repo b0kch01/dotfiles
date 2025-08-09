@@ -8,6 +8,10 @@ eval 'eval "$(mise activate bash)"'
 # Home Bin
 export PATH="$PATH:/$HOME/.local/bin"
 
+# EDITOR
+export EDITOR=nvim
+export VISUAL=nvim
+
 # Aliases
 alias grep='grep --color=auto'
 alias la='eza --icons -la'

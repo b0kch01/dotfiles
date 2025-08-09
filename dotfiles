@@ -1,0 +1,34 @@
+#!/bin/bash
+
+# Set destination directory
+DEST=~/.dotfiles
+
+# List of config directories/files to copy
+CONFIG_ITEMS=(
+  ghostty
+  nvim
+  hypr
+  waybar
+)
+
+echo "COPYING DOTFILES..."
+
+# Copy each config directory
+for item in "${CONFIG_ITEMS[@]}"; do
+  cp -r "$HOME/.config/$item" "$DEST"
+done
+
+# Copy .bashrc separately
+cp -r "$HOME/.bashrc" "$DEST"
+cp -r "$HOME/.bash_profile" "$DEST"
+
+SCRIPT_PATH="$(realpath "$0")"
+cp "$SCRIPT_PATH" "$DEST"
+
+echo "PUSHING CHANGES..."
+
+# Commit and push changes
+cd "$DEST" || exit
+git add --all
+git commit
+git push
