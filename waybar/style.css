@@ -1,0 +1,43 @@
+@import "./settings.css";
+
+* {
+  all: unset;
+  font-family: "Geist", "GeistMono NFP", serif;
+  color: @foreground;
+}
+
+#clock {
+  padding: 0 10px;
+  font-weight: 600;
+}
+
+#workspaces button {
+  font-weight: 600;
+  opacity: 0.3;
+  padding-right: 7px;
+}
+
+#workspaces button ~ button {
+  margin-left: 3px;
+}
+
+#workspaces button.active,
+#workspaces button:hover {
+  opacity: 1;
+}
+
+#custom-verse {
+  font-weight: 600;
+  font-size: 12px;
+  opacity: 0.5;
+}
+
+tooltip {
+  background: @background;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+}
+
+#today {
+  background: white;
+}

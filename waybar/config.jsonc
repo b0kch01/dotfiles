@@ -1,0 +1,61 @@
+{
+  "layer": "top",
+  "position": "top",
+  "margin": "10 20",
+
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["custom/verse", "clock"],
+  "modules-right": ["pulseaudio#output"],
+
+  "custom/verse": {
+    "return-type": "json",
+    "format": "{}",
+    "exec-on-event": false,
+    "on-click": "pkill -SIGRTMIN+10 waybar",
+    "signal": 10,
+    "exec": "python ~/Documents/Code/daily-verse/run.py",
+  },
+
+  "hyprland/workspaces": {
+    "format": "{name} {icon}",
+    "format-icons": {
+      "active": "",
+      "default": "",
+    },
+  },
+  "clock": {
+    "tooltip-format": "Time",
+    "tooltip-format": "<tt><small>{calendar}</small></tt>",
+
+    "calendar": {
+      "mode": "year",
+      "mode-mon-col": 3,
+      "weeks-pos": "right",
+      "on-scroll": 1,
+      "format": {
+        "months": "<span color='#ffffffaa'><b>{}</b></span>",
+        "days": "<span color='#ffffff'><b>{}</b></span>",
+        "weeks": "<span color='#59d499'><b>.{}</b></span>",
+        "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+        "today": "<span color='#ff5360'><b>{}</b></span>",
+      },
+    },
+  },
+  "pulseaudio#output": {
+    "format": "<span rise='-1pt'>{icon}</span> <span font='9' font-weight='500'>{volume}%</span>",
+    "format-bluetooth": "{icon} {volume}%",
+    "format-source-muted": "{volume}",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["", ""],
+    },
+    "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "tooltip": true,
+    "scroll-step": 5,
+  },
+}

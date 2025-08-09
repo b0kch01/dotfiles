@@ -1,0 +1,12 @@
+theme = Raycast_Dark
+
+background-opacity = 0.5
+selection-foreground = #0a0c10
+selection-background = #f0f3f6
+
+palette = 8=#9ea7b3
+
+font-family = GeistMono NFM
+font-size = 11.5
+
+keybind = ctrl+v=paste_from_clipboard
