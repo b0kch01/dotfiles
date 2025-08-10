@@ -9,6 +9,7 @@ CONFIG_ITEMS=(
   nvim
   hypr
   waybar
+  starship
 )
 
 echo "COPYING DOTFILES..."
