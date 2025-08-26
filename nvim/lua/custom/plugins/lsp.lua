@@ -8,7 +8,7 @@ return {
       { 'williamboman/mason.nvim', config = true },
 
       -- MASON TOOLS WILL BE INIT IN THE CONFIG:
-      'williamboman/mason-lspconfig.nvim',
+      'mason-org/mason-lspconfig.nvim',
       'WhoIsSethDaniel/mason-tool-installer.nvim',
 
       -- FIDGET
@@ -18,38 +18,17 @@ return {
       'saghen/blink.cmp',
     },
     config = function()
-      --  This function gets run when an LSP attaches to a particular buffer.
-      --    That is to say, every time a new file is opened that is associated with
-      --    an lsp (for example, opening `main.rs` is associated with `rust_analyzer`) this
-      --    function will be executed to configure the current buffer
       vim.api.nvim_create_autocmd('LspAttach', {
         group = vim.api.nvim_create_augroup('kickstart-lsp-attach', { clear = true }),
         callback = function(event)
-          -- NOTE: Remember that Lua is a real programming language, and as such it is possible
-          -- to define small helper and utility functions so you don't have to repeat yourself.
-          --
-          -- In this case, we create a function that lets us more easily define mappings specific
-          -- for LSP related items. It sets the mode, buffer and description for us each time.
           local map = function(keys, func, desc, mode)
             mode = mode or 'n'
             vim.keymap.set(mode, keys, func, { buffer = event.buf, desc = 'LSP: ' .. desc })
           end
 
-          -- Jump to the definition of the word under your cursor.
-          --  This is where a variable was first declared, or where a function is defined, etc.
-          --  To jump back, press <C-t>.
           map('gd', require('telescope.builtin').lsp_definitions, '[G]oto [D]efinition')
-
-          -- Find references for the word under your cursor.
           map('gr', require('telescope.builtin').lsp_references, '[G]oto [R]eferences')
-
-          -- Jump to the implementation of the word under your cursor.
-          --  Useful when your language has ways of declaring types without an actual implementation.
           map('gI', require('telescope.builtin').lsp_implementations, '[G]oto [I]mplementation')
-
-          -- Jump to the type of the word under your cursor.
-          --  Useful when you're not sure what type a variable is and you want to see
-          --  the definition of its *type*, not where it was *defined*.
           map('<leader>D', require('telescope.builtin').lsp_type_definitions, 'Type [D]efinition')
 
           -- Fuzzy find all the symbols in your current document.
@@ -60,19 +39,8 @@ return {
           --  Similar to document symbols, except searches over your entire project.
           map('<leader>ws', require('telescope.builtin').lsp_dynamic_workspace_symbols, '[W]orkspace [S]ymbols')
 
-          -- Rename the variable under your cursor.
-          --  Most Language Servers support renaming across files, etc.
           map('<leader>rn', vim.lsp.buf.rename, '[R]e[n]ame')
-
-          -- Execute a code action, usually your cursor needs to be on top of an error
-          -- or a suggestion from your LSP for this to activate.
           map('<leader>ca', vim.lsp.buf.code_action, '[C]ode [A]ction', { 'n', 'x' })
-
-          -- Organize imports
-          map('<leader>co', '<cmd>TSToolsOrganizeImports<cr>', '[C]ode [O]rganize Imports')
-
-          -- WARN: This is not Goto Definition, this is Goto Declaration.
-          --  For example, in C this would take you to the header.
           map('gD', vim.lsp.buf.declaration, '[G]oto [D]eclaration')
 
           -- The following two autocommands are used to highlight references of the
@@ -107,10 +75,24 @@ return {
           -- The following code creates a keymap to toggle inlay hints in your
           -- code, if the language server you are using supports them
           -- This may be unwanted, since they displace some of your code
-          if client and client.supports_method(vim.lsp.protocol.Methods.textDocument_inlayHint) then
+          if client and client:supports_method(vim.lsp.protocol.Methods.textDocument_inlayHint) then
             map('<leader>th', function()
               vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled { bufnr = event.buf })
             end, '[T]oggle Inlay [H]ints')
+          end
+
+          if client and client:supports_method(vim.lsp.protocol.Methods.textDocument_codeAction) then
+            local lsp_action = function(action)
+              return function()
+                vim.lsp.buf.code_action {
+                  context = { only = { action }, diagnostics = {} },
+                  apply = true,
+                }
+              end
+            end
+
+            map('<leader>oi', lsp_action 'source.organizeImports', '[O]rganize [I]mports')
+            map('<leader>am', lsp_action 'source.addMissingImports', '[A]dd [M]issing Imports')
           end
         end,
       })
@@ -144,46 +126,33 @@ return {
         },
       }
 
-      local capabilities = require('blink.cmp').get_lsp_capabilities()
-
       local servers = {
         pyright = {},
-        tailwindcss = {},
-        eslint_d = {},
         yamlls = {},
-        ts_ls = {
+        cssls = {},
+
+        vtsls = {
           settings = {
+            complete_function_calls = true,
+            vtsls = {
+              enableMoveToFileCodeAction = false,
+            },
             typescript = {
-              preferences = {
-                includeCompletionsForModuleExports = true,
-                includeCompletionsForImportStatements = true,
-                importModuleSpecifier = 'non-relative',
-              },
-              tsserver = {
-                useSyntaxServer = false,
-              },
               inlayHints = {
-                includeInlayParameterNameHints = 'all',
-                includeInlayParameterNameHintsWhenArgumentMatchesName = true,
-                includeInlayFunctionParameterTypeHints = true,
-                includeInlayVariableTypeHints = true,
-                includeInlayVariableTypeHIntsWhenTypeMatchesName = true,
-                includeInlayPropertyDeclarationTypeHints = true,
-                includeInlayFunctionLikeReturnTypeHints = true,
-                includeInlayEnumMemberValueHints = true,
+                parameterNames = {
+                  enabled = 'all',
+                },
+                parameterTypes = {
+                  enabled = true,
+                },
+                propertyDeclarationTypes = { enabled = true },
               },
             },
-
             javascript = {
               inlayHints = {
-                includeInlayParameterNameHints = 'all',
-                includeInlayParameterNameHintsWhenArgumentMatchesName = true,
-                includeInlayFunctionParameterTypeHints = true,
-                includeInlayVariableTypeHints = true,
-                includeInlayVariableTypeHIntsWhenTypeMatchesName = true,
-                includeInlayPropertyDeclarationTypeHints = true,
-                includeInlayFunctionLikeReturnTypeHints = true,
-                includeInlayEnumMemberValueHints = true,
+                parameterNames = {
+                  enabled = 'all',
+                },
               },
             },
           },
@@ -200,24 +169,23 @@ return {
             },
           },
         },
-        cssls = {},
+
+        eslint_d = {},
+        markdownlint = {},
+        stylua = {},
+        prettierd = {},
       }
 
       local ensure_installed = vim.tbl_keys(servers or {})
       vim.list_extend(ensure_installed, { 'stylua' })
 
+      require('mason-lspconfig').setup { ensure_installer = false, automatic_enable = false }
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
-      require('mason-lspconfig').setup {
-        ensure_installed = {},
-        automatic_installation = false,
-        handlers = {
-          function(server_name)
-            local server = servers[server_name] or {}
-            server.capabilities = vim.tbl_deep_extend('force', {}, capabilities, server.capabilities or {})
-            require('lspconfig')[server_name].setup(server)
-          end,
-        },
-      }
+
+      for server_name, config in pairs(servers) do
+        vim.lsp.config(server_name, config)
+        vim.lsp.enable(server_name)
+      end
     end,
   },
 
@@ -227,7 +195,21 @@ return {
     event = 'VimEnter',
     version = '1.*',
     opts = {
-      keymap = { preset = 'default' },
+      completion = {
+        menu = {
+          draw = {
+            columns = {
+              { 'kind_icon', gap = 1 },
+              {
+                'label',
+                'label_description',
+                gap = 2,
+              },
+            },
+          },
+        },
+      },
+      keymap = { preset = 'enter' },
       appearance = { nerd_font_variant = 'mono' },
       sources = {
         default = { 'lsp', 'path', 'snippets', 'lazydev' },
@@ -244,13 +226,6 @@ return {
   {
     'j-hui/fidget.nvim',
     opts = {
-      notification = {
-        window = {
-          normal_hl = 'String',
-          winblend = 0,
-          x_padding = 0,
-        },
-      },
       integration = {
         ['nvim-tree'] = {
           enable = true,

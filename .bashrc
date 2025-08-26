@@ -14,6 +14,7 @@ export VISUAL=nvim
 # Aliases
 alias grep='grep --color=auto'
 alias la='eza --icons -la'
+alias logout='hyprctl dispatch exit'
 
 # INIT
 eval "$(starship init bash)"

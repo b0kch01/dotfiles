@@ -16,4 +16,3 @@ window-padding-balance = true
 window-step-resize = true
 
 keybind = ctrl+v=paste_from_clipboard
-keybind = shift+enter=text:\n
