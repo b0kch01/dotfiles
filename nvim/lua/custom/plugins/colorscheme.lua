@@ -1,14 +1,26 @@
 return {
+  -- {
+  --   'folke/tokyonight.nvim',
+  --   priority = 1000,
+  --   opts = {
+  --     style = 'night',
+  --     transparent = false,
+  --   },
+  --   config = function(_, opts)
+  --     require('tokyonight').setup(opts)
+  --     vim.cmd [[colorscheme tokyonight]]
+  --   end,
+  -- },
   {
-    'folke/tokyonight.nvim',
+    'killitar/obscure.nvim',
+    lazy = false,
     priority = 1000,
     opts = {
-      style = 'night',
       transparent = false,
     },
     config = function(_, opts)
-      require('tokyonight').setup(opts)
-      vim.cmd [[colorscheme tokyonight]]
+      require('obscure').setup(opts)
+      vim.cmd [[colorscheme obscure]]
     end,
   },
   --

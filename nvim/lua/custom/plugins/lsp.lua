@@ -130,6 +130,7 @@ return {
         pyright = {},
         yamlls = {},
         cssls = {},
+        tailwindcss = {},
 
         vtsls = {
           settings = {

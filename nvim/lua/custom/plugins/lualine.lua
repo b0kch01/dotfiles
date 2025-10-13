@@ -5,7 +5,8 @@ return {
   event = 'VeryLazy',
 
   opts = function()
-    local p = require('tokyonight.colors').setup { style = 'night' }
+    -- local p = require('obscure.colors').setup { style = 'night' }
+    local p = require('obscure.palettes').get_palette 'obscure'
 
     local colors = {
       bg = p.bg_statusline,
@@ -105,7 +106,7 @@ return {
     ins_left {
       -- mode component
       function()
-        return '1 John 2:15'
+        return '1 Corinthians 1:18-31'
       end,
       color = function()
         -- auto change color according to neovims mode

@@ -11,7 +11,8 @@ return {
         enabled = true,
         preset = {
           header = [[
-Hello, world!
+Establish the work of our hands.
+Yes, establish the work of our hands.
             ]],
         },
         sections = {
