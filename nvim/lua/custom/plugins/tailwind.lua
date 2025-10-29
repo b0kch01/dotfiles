@@ -3,7 +3,8 @@ return {
     'luckasRanarison/tailwind-tools.nvim',
     name = 'tailwind-tools',
     build = ':UpdateRemotePlugins',
-    lazy = 'true',
+    lazy = true,
+    ft = 'ts,tsx',
     dependencies = {
       'nvim-treesitter/nvim-treesitter',
       'nvim-telescope/telescope.nvim', -- optional

@@ -3,7 +3,7 @@
 
 return {
   'nvim-neo-tree/neo-tree.nvim',
-  event = 'VimEnter',
+  lazy = true,
   version = '*',
   dependencies = {
     'nvim-lua/plenary.nvim',
@@ -15,6 +15,13 @@ return {
     { '<leader>e', ':Neotree reveal<CR>', desc = 'NeoTree reveal', silent = true },
   },
   opts = {
+    default_component_configs = {
+      icon = {
+        folder_closed = '',
+        folder_open = '',
+        folder_empty = '󱧋',
+      },
+    },
     filesystem = {
       window = {
         mappings = {

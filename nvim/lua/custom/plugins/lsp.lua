@@ -2,7 +2,8 @@ return {
   {
     -- Main LSP Configuration
     'neovim/nvim-lspconfig',
-    event = 'VimEnter',
+    lazy = true,
+    event = 'VeryLazy',
     dependencies = {
       -- INIT MASON
       { 'williamboman/mason.nvim', config = true },
@@ -12,10 +13,10 @@ return {
       'WhoIsSethDaniel/mason-tool-installer.nvim',
 
       -- FIDGET
-      'j-hui/fidget.nvim',
+      -- 'j-hui/fidget.nvim',
 
       -- Blink
-      'saghen/blink.cmp',
+      -- 'saghen/blink.cmp',
     },
     config = function()
       vim.api.nvim_create_autocmd('LspAttach', {
@@ -193,7 +194,8 @@ return {
   -- Blink
   {
     'saghen/blink.cmp',
-    event = 'VimEnter',
+    lazy = true,
+    event = 'BufRead',
     version = '1.*',
     opts = {
       completion = {
@@ -226,10 +228,12 @@ return {
   -- Fidget
   {
     'j-hui/fidget.nvim',
-    opts = {
-      integration = {
-        ['nvim-tree'] = {
-          enable = true,
+    lazy = true,
+    event = 'VeryLazy',
+    config = {
+      notification = {
+        window = {
+          winblend = 0,
         },
       },
     },
@@ -241,7 +245,6 @@ return {
     -- used for completion, annotations and signatures of Neovim apis
     'folke/lazydev.nvim',
     ft = 'lua',
-
     opts = {
       library = {
         -- Load luvit types when the `vim.uv` word is found

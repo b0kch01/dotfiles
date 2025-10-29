@@ -9,9 +9,15 @@ return {
     end,
     opts = {
       flavour = 'mocha',
-      transparent_background = false,
+      transparent_background = true,
+      float = {
+        transparent = true,
+        solid = true,
+      },
       integerations = {
+        cmp = { style = 'bordered' },
         nvimtree = true,
+        gitsigns = true,
       },
     },
   },
