@@ -3,7 +3,7 @@ return {
     -- Main LSP Configuration
     'neovim/nvim-lspconfig',
     lazy = true,
-    event = 'VeryLazy',
+    event = 'BufReadPre',
     dependencies = {
       -- INIT MASON
       { 'williamboman/mason.nvim', config = true },

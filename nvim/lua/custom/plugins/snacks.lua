@@ -1,8 +1,7 @@
 return {
   {
     'folke/snacks.nvim',
-    lazy = true,
-    event = 'VeryLazy',
+    event = 'VimEnter',
     opts = {
       notifier = { enabled = true },
       bufdelete = { enabled = true },

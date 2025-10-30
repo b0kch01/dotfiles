@@ -1,7 +1,7 @@
 return {
   {
     'chrisgrieser/nvim-origami',
-    event = 'VeryLazy',
+    event = 'BufReadPre',
     lazy = true,
     opts = {
       foldKeymaps = { setup = false },
