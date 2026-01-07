@@ -8,7 +8,6 @@ $directory\
 ${custom.giturl}\
 $git_branch\
 $git_state\
-$git_status\
 $line_break\
 $character
 """
@@ -46,8 +45,8 @@ format = "at $output"
 [git_branch]
 symbol = "[](black) "
 # format =  ' [$symbol$branch(:$remote_branch)]($style)[]'
-style = "fg:yellow bg:black"
-format =  '  on [$symbol$branch]($style)[](black)'
+style = "fg:white bg:black"
+format =  '  on [$symbol$branch]($style)[](black) '
 
 [git_status]
 style = "fg:yellow"
