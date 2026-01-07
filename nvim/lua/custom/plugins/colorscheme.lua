@@ -9,12 +9,12 @@ return {
     end,
     opts = {
       flavour = 'mocha',
-      transparent_background = true,
+      transparent_background = false,
       float = {
-        transparent = true,
-        solid = true,
+        transparent = false,
+        solid = false,
       },
-      integerations = {
+      integrations = {
         cmp = { style = 'bordered' },
         nvimtree = true,
         gitsigns = true,

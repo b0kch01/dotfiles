@@ -171,11 +171,6 @@ return {
             },
           },
         },
-
-        eslint_d = {},
-        markdownlint = {},
-        stylua = {},
-        prettierd = {},
       }
 
       local ensure_installed = vim.tbl_keys(servers or {})
