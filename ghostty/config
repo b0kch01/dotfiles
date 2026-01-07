@@ -15,5 +15,7 @@ window-padding-color = extend
 window-padding-balance = false
 window-step-resize = true
 
+macos-titlebar-style = hidden
+
 keybind = ctrl+v=paste_from_clipboard
 keybind = shift+enter=text:\n
