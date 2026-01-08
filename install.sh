@@ -27,6 +27,10 @@ fi
 
 ### NORMAL PROGRAM EXECUTION
 
+exists() {
+  [ -d "$1" ] || [ -f "$1" ]
+}
+
 pull_and_sync() {
   echo
   color $BLUE "Pulling latest changes"
@@ -36,6 +40,49 @@ pull_and_sync() {
     color $RED "[FAIL] Could not pull latest changes."
     exit 1
   fi
+
+  echo
+  color $BLUE "Previewing local modifications"
+
+  while read -r line || [ -n "$line" ]; do
+    if [ -f "$line" ]; then
+      target="$HOME/$line"
+      label="~/$line"
+    elif [ -d "$line" ]; then
+      target="$HOME/.config/$line"
+      label="~/.config/$line"
+    else
+      color $RED "[FAIL] $line does not exist in .dotfiles"
+      exit 1
+    fi
+
+    if [ -e "$target" ]; then
+      echo -e "${YELLOW}[mod]${NORMAL} $label"
+    else
+      echo -e "${GREEN}[add]${NORMAL} $label"
+    fi
+  done < ".config"
+
+  echo
+  read -p "Do you want to continue? (y/n): " commit
+
+  if [ "$commit" != 'y' ]; then
+    echo "Ok. Not doing anything."
+    exit 0
+  fi
+
+  while read -r line || [ -n "$line" ]; do
+    if [ -f "$line" ]; then
+      cp $line "$HOME/"
+    elif [ -d "$line" ]; then
+      cp -r $line "$HOME/.config"
+    else
+      color $RED "[FAIL] [$line] does not exist in .dotfiles"
+      exit 1
+    fi
+  done < ".config" 
+
+  color $GREEN "Synced successfully."
 }
 
 sync_and_push() {
