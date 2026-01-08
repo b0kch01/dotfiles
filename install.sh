@@ -7,7 +7,7 @@ BLUE='\e[34m'
 NORMAL='\e[0m'
 
 color() {
-  echo -e "$1$2${NORMAL}"
+  printf "$1$2${NORMAL}\n"
 }
 
 # Making sure .config exists
@@ -57,9 +57,9 @@ pull_and_sync() {
     fi
 
     if [ -e "$target" ]; then
-      echo -e "${YELLOW}[mod]${NORMAL} $label"
+      printf "${YELLOW}[mod]${NORMAL} $label\n"
     else
-      echo -e "${GREEN}[add]${NORMAL} $label"
+      printf "${GREEN}[add]${NORMAL} $label\n"
     fi
   done < ".config"
 
