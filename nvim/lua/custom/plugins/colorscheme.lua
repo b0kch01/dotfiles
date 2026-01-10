@@ -1,10 +1,10 @@
 return {
   {
     'wongmjane/nerv-theme',
+    rtp = 'neovim-theme',
     priority = 1000,
     config = function()
-      require 'nerv-theme'
-      vim.cmd [[colorscheme nerv]]
+      vim.cmd.colorscheme 'nerv'
     end,
   },
   {
