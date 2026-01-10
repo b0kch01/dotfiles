@@ -150,12 +150,16 @@ echo What would you like to do?
 echo
 echo [1] Download and use cloud dotfiles
 echo [2] Upload local dotfiles to cloud
+echo [3] Propagate cache and push changes to cloud
 
 read -p "> " MENU_CHOICE
 
 if [ "$MENU_CHOICE" -eq "1" ]; then
   pull_and_sync
 elif [ "$MENU_CHOICE" -eq "2" ]; then
+  sync_and_push
+elif [ "$MENU_CHOICE" -eq "3" ]; then
+  pull_and_sync
   sync_and_push
 else
   exit 0
