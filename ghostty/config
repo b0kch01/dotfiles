@@ -14,7 +14,7 @@ window-padding-x = 0
 window-padding-y = 3,0
 window-padding-color = extend
 window-padding-balance = false
-window-step-resize = true
+window-step-resize = false
 
 macos-titlebar-style = hidden
 
