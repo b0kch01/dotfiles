@@ -1,9 +1,9 @@
 return {
   {
     'wongmjane/nerv-theme',
-    lazy = false,
     priority = 1000,
     config = function()
+      require 'nerv-theme'
       vim.cmd [[colorscheme nerv]]
     end,
   },
