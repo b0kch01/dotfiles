@@ -11,7 +11,7 @@ return {
       flavour = 'mocha',
       transparent_background = false,
       float = {
-        transparent = false,
+        transparent = true,
         solid = false,
       },
       integrations = {
