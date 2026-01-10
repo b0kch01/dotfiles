@@ -148,8 +148,8 @@ sync_and_push() {
 echo
 echo What would you like to do?
 echo
-echo [1] Pull and sync from remote
-echo [2] Push and sync to remote
+echo [1] Pull and use remote dotfiles
+echo [2] Copy local dotfiles and push
 
 read -p "> " MENU_CHOICE
 
