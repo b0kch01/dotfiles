@@ -124,6 +124,7 @@ sync_and_push() {
   if git diff --quiet && git diff --cached --quiet; then
     echo "No new changes detected!"
     exit 0
+  fi
 
   git pull origin main
   if [ $? -ne "0" ]; then
