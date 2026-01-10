@@ -1,10 +1,13 @@
 return {
   {
-    'wongmjane/nerv-theme',
-    rtp = 'neovim-theme',
+    'ribru17/bamboo.nvim',
+    lazy = false,
     priority = 1000,
     config = function()
-      vim.cmd.colorscheme 'nerv'
+      require('bamboo').setup {
+        -- optional configuration here
+      }
+      require('bamboo').load()
     end,
   },
   {

@@ -1,6 +1,6 @@
 theme = Raycast Dark
 
-background-opacity = 0.85
+background-opacity = 0.90
 background-blur = 20
 selection-foreground = #0a0c10
 selection-background = #f0f3f6
