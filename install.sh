@@ -148,8 +148,8 @@ sync_and_push() {
 echo
 echo What would you like to do?
 echo
-echo [1] Pull and use remote dotfiles
-echo [2] Copy local dotfiles and push
+echo [1] Download and use cloud dotfiles
+echo [2] Upload local dotfiles to cloud
 
 read -p "> " MENU_CHOICE
 
