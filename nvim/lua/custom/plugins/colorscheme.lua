@@ -7,28 +7,28 @@ return {
       vim.cmd [[colorscheme nerv]]
     end,
   },
-  {
-    'catppuccin/nvim',
-    name = 'catppuccin',
-    priority = 1000,
-    config = function(_, opts)
-      require('catppuccin').setup(opts)
-      vim.cmd [[colorscheme catppuccin]]
-    end,
-    opts = {
-      flavour = 'mocha',
-      transparent_background = false,
-      float = {
-        transparent = false,
-        solid = false,
-      },
-      integrations = {
-        cmp = { style = 'bordered' },
-        nvimtree = true,
-        gitsigns = true,
-      },
-    },
-  },
+  -- {
+  --   'catppuccin/nvim',
+  --   name = 'catppuccin',
+  --   priority = 1000,
+  --   config = function(_, opts)
+  --     require('catppuccin').setup(opts)
+  --     vim.cmd [[colorscheme catppuccin]]
+  --   end,
+  --   opts = {
+  --     flavour = 'mocha',
+  --     transparent_background = false,
+  --     float = {
+  --       transparent = false,
+  --       solid = false,
+  --     },
+  --     integrations = {
+  --       cmp = { style = 'bordered' },
+  --       nvimtree = true,
+  --       gitsigns = true,
+  --     },
+  --   },
+  -- },
   -- {
   --   'folke/tokyonight.nvim',
   --   priority = 1000,
