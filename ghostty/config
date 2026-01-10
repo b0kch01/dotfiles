@@ -1,6 +1,7 @@
 theme = Raycast Dark
 
 background-opacity = 0.85
+background-blur = 20
 selection-foreground = #0a0c10
 selection-background = #f0f3f6
 
@@ -10,7 +11,7 @@ font-family = GeistMono NFP
 font-size = 11.5
 
 window-padding-x = 0
-window-padding-y = 2,0
+window-padding-y = 3,0
 window-padding-color = extend
 window-padding-balance = false
 window-step-resize = true
