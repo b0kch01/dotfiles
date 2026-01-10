@@ -90,7 +90,7 @@ pull_and_sync() {
 
   while read -r line || [ -n "$line" ]; do
     if [ -d "$line" ]; then
-      cp -r $line "$HOME/.config"
+      rsync -a --delete $line "$HOME/.config"
     elif [ -f "$line" ]; then
       cp $line "$HOME/"
     else
@@ -110,7 +110,7 @@ sync_and_push() {
 
   while read -r line || [ -n "$line" ]; do
     if [ -d "$HOME/.config/$line" ]; then
-      cp -r "$HOME/.config/$line" .
+      rsync -a --delete "$HOME/.config/$line" .
     elif [ -f "$HOME/$line" ]; then
       cp "$HOME/$line" .
     else
