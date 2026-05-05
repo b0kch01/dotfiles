@@ -31,7 +31,10 @@ return {
         settings = {
           Lua = {
             runtime = { version = 'LuaJIT' },
-            diagnostics = { globals = { 'vim' } },
+            diagnostics = { globals = {
+              'vim',
+              'wait'
+            }},
             workspace = {
               checkThirdParty = false,
               library = {
@@ -100,10 +103,6 @@ return {
           local map = function(mode, lhs, rhs, desc)
             vim.keymap.set(mode, lhs, rhs, { buffer = bufnr, desc = desc })
           end
-
-          vim.o.autocomplete = true
-          vim.o.completeopt = 'fuzzy,menuone,noselect,popup'
-          vim.o.pumheight = 10
 
           vim.lsp.completion.enable(true, args.data.client_id, args.buf)
 
