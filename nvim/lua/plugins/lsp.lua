@@ -21,7 +21,7 @@ return {
       require('mason-tool-installer').setup({
         ensure_installed = {
           'lua_ls',
-          'ts_ls',
+          'vtsls',
           'jsonls',
           'eslint-lsp'
         },
@@ -46,32 +46,12 @@ return {
         },
       })
 
-      vim.lsp.config('ts_ls', {
-        settings = {
-          typescript = {
-            inlayHints = {
-              includeInlayParameterNameHints = 'all',
-              includeInlayFunctionParameterTypeHints = true,
-              includeInlayVariableTypeHints = true,
-            },
-          },
-          javascript = {
-            inlayHints = {
-              includeInlayParameterNameHints = 'all',
-              includeInlayFunctionParameterTypeHints = true,
-              includeInlayVariableTypeHints = true,
-            },
-          },
-        },
-      })
-
       require('mason-lspconfig').setup({
         automatic_enable = {
-          exclude = { 'ts_ls', "lua_ls" },
+          exclude = {  "lua_ls" },
         },
       })
 
-      vim.lsp.enable('ts_ls')
       vim.lsp.enable('lua_ls')
 
       vim.diagnostic.config({
@@ -113,6 +93,7 @@ return {
           map('n', 'gr', vim.lsp.buf.references, 'References')
           map('n', '<leader>rn', vim.lsp.buf.rename, 'Rename symbol')
           map({ 'n', 'v' }, '<leader>ca', vim.lsp.buf.code_action, 'Code action')
+          map('n', '<leader>f', vim.lsp.buf.format, 'Format buffer')
 
           local lsp_action = function(action)
             return function()
