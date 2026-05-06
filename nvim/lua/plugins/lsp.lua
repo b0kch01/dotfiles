@@ -1,5 +1,15 @@
 return {
   {
+    'folke/lazydev.nvim',
+    ft = 'lua',
+    opts = {
+      library = {
+        -- Load luvit types when the `vim.uv` word is found
+        { path = '${3rd}/luv/library', words = { 'vim%.uv' } },
+      },
+    },
+  },
+  {
     'mason-org/mason.nvim',
   },
   {
@@ -20,10 +30,14 @@ return {
 
       require('mason-tool-installer').setup({
         ensure_installed = {
+          'stylua',
           'lua_ls',
           'vtsls',
           'jsonls',
-          'eslint-lsp'
+          'eslint-lsp',
+          'eslint_d',
+          'biome',
+          'prettierd',
         },
       })
 
@@ -31,10 +45,12 @@ return {
         settings = {
           Lua = {
             runtime = { version = 'LuaJIT' },
-            diagnostics = { globals = {
-              'vim',
-              'wait'
-            }},
+            diagnostics = {
+              globals = {
+                'vim',
+                'wait',
+              },
+            },
             workspace = {
               checkThirdParty = false,
               library = {
@@ -48,7 +64,7 @@ return {
 
       require('mason-lspconfig').setup({
         automatic_enable = {
-          exclude = {  "lua_ls" },
+          exclude = { 'lua_ls' },
         },
       })
 
@@ -93,22 +109,23 @@ return {
           map('n', 'gr', vim.lsp.buf.references, 'References')
           map('n', '<leader>rn', vim.lsp.buf.rename, 'Rename symbol')
           map({ 'n', 'v' }, '<leader>ca', vim.lsp.buf.code_action, 'Code action')
-          map('n', '<leader>f', vim.lsp.buf.format, 'Format buffer')
+          map('n', '<leader>f', function()
+            require('conform').format({ bufnr = args.buf })
+          end, 'Format buffer')
 
           local lsp_action = function(action)
             return function()
-              vim.lsp.buf.code_action {
+              vim.lsp.buf.code_action({
                 context = { only = { action }, diagnostics = {} },
                 apply = true,
-              }
+              })
             end
           end
 
-          map('n', '<leader>oi', lsp_action("source.organizeImports"), "[O]rganize [I]mports")
-          map('n', '<leader>am', lsp_action("source.addMissingImports"), "[A]dd [M]issing Imports")
-
+          map('n', '<leader>oi', lsp_action('source.organizeImports'), '[O]rganize [I]mports')
+          map('n', '<leader>am', lsp_action('source.addMissingImports'), '[A]dd [M]issing Imports')
         end,
       })
-    end
+    end,
   },
 }

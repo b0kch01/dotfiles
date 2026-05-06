@@ -11,6 +11,6 @@ return {
   ---@module 'blink.cmp'
   ---@type blink.cmp.Config
   opts = {
-    keymap = { preset = 'enter' }
-  }
+    keymap = { preset = 'enter' },
+  },
 }
