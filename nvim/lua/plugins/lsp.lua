@@ -34,10 +34,7 @@ return {
           'lua_ls',
           'vtsls',
           'jsonls',
-          'eslint-lsp',
-          'eslint_d',
           'biome',
-          'prettierd',
         },
       })
 

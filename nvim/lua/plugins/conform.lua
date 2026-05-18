@@ -6,7 +6,7 @@ return {
   opts = {
     formatters_by_ft = {
       lua = { 'stylua', stop_after_first = true },
-      ['*'] = { 'biome-check', 'eslint_d', 'prettierd', stop_after_first = true },
+      ['*'] = { 'biome-check', stop_after_first = true },
     },
     format_on_save = {
       timeout_ms = 500,
