@@ -12,7 +12,7 @@ $line_break\
 $character
 """
 
-right_format = """$all"""
+right_format = """$nodejs"""
 
 [os]
 disabled = true
@@ -64,3 +64,6 @@ disabled = true
 
 [character]
 disabled = false
+
+[nodejs]
+format = '[ $version](bold green) '

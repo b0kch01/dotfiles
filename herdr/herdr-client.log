@@ -1,0 +1,35 @@
+2026-09-18T16:51:58.045474Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=41743
+2026-09-18T16:51:58.045534Z  INFO herdr::client: connecting to server path=/Users/nathanchoi/.config/herdr/herdr-client.sock
+2026-09-18T16:51:58.294804Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.1
+2026-09-18T16:52:00.652531Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-09-18T16:52:00.652665Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-09-18T17:14:48.282691Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-09-18T17:14:48.283700Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-09-18T17:14:49.423245Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=41743
+2026-09-21T18:37:47.266474Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=43938
+2026-09-21T18:37:47.266620Z  INFO herdr::client: connecting to server path=/Users/nathanchoi/.config/herdr/herdr-client.sock
+2026-09-21T18:37:47.286981Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.1
+2026-09-21T18:37:55.038926Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=43938
+2026-09-21T18:39:40.333188Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=44119
+2026-09-21T18:39:40.334256Z  INFO herdr::client: connecting to server path=/Users/nathanchoi/.config/herdr/herdr-client.sock
+2026-09-21T18:39:40.482014Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.1
+2026-09-21T18:39:57.523120Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=44119
+2026-09-21T18:40:30.947848Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=44324
+2026-09-21T18:40:30.948254Z  INFO herdr::client: connecting to server path=/Users/nathanchoi/.config/herdr/herdr-client.sock
+2026-09-21T18:40:30.961981Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.1
+2026-09-21T20:07:39.724524Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=44324
+2026-09-21T20:07:43.094286Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=56139
+2026-09-21T20:07:43.094417Z  INFO herdr::client: connecting to server path=/Users/nathanchoi/.config/herdr/herdr-client.sock
+2026-09-21T20:07:43.154016Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.1
+2026-09-21T20:09:40.748485Z  WARN herdr::config::keybinds: config diagnostic unsafe direct keybinding: keys.previous_workspace = "k" would intercept typing; use "prefix+k" to require the prefix; disabling binding
+2026-09-21T20:09:40.749118Z  WARN herdr::config::keybinds: config diagnostic unsafe direct keybinding: keys.next_workspace = "j" would intercept typing; use "prefix+j" to require the prefix; disabling binding
+2026-09-21T20:09:40.749388Z  WARN herdr::config::keybinds: config diagnostic unsafe direct keybinding: keys.previous_workspace = "k" would intercept typing; use "prefix+k" to require the prefix; disabling binding
+2026-09-21T20:09:40.749408Z  WARN herdr::config::keybinds: config diagnostic unsafe direct keybinding: keys.next_workspace = "j" would intercept typing; use "prefix+j" to require the prefix; disabling binding
+2026-09-21T20:09:40.772933Z  WARN herdr::config::keybinds: config diagnostic unsafe direct keybinding: keys.previous_workspace = "k" would intercept typing; use "prefix+k" to require the prefix; disabling binding
+2026-09-21T20:09:40.772998Z  WARN herdr::config::keybinds: config diagnostic unsafe direct keybinding: keys.next_workspace = "j" would intercept typing; use "prefix+j" to require the prefix; disabling binding
+2026-09-21T20:09:40.773065Z  WARN herdr::config::keybinds: config diagnostic unsafe direct keybinding: keys.previous_workspace = "k" would intercept typing; use "prefix+k" to require the prefix; disabling binding
+2026-09-21T20:09:40.773080Z  WARN herdr::config::keybinds: config diagnostic unsafe direct keybinding: keys.next_workspace = "j" would intercept typing; use "prefix+j" to require the prefix; disabling binding
+2026-09-23T00:00:38.811700Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=56139
+2026-09-23T16:06:26.117683Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=7414
+2026-09-23T16:06:26.118312Z  INFO herdr::client: connecting to server path=/Users/nathanchoi/.config/herdr/herdr-client.sock
+2026-09-23T16:06:26.265843Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.1
