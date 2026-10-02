@@ -2,11 +2,11 @@
   "version": 3,
   "workspaces": [
     {
-      "id": "wR",
+      "id": "wP",
       "custom_name": "[1] ~",
-      "identity_cwd": "/Users/b0kch01/.dotfiles",
+      "identity_cwd": "/Users/b0kch01",
       "public_pane_numbers": {
-        "11": 1
+        "9": 1
       },
       "next_public_pane_number": 2,
       "public_tab_numbers": [
@@ -15,18 +15,18 @@
       "next_public_tab_number": 2,
       "tabs": [
         {
-          "custom_name": "[1] .dotfiles › bash",
+          "custom_name": "[1] zsh",
           "layout": {
-            "Pane": 11
+            "Pane": 9
           },
           "panes": {
-            "11": {
-              "cwd": "/Users/b0kch01/.dotfiles"
+            "9": {
+              "cwd": "/Users/b0kch01"
             }
           },
           "zoomed": false,
-          "focused": 11,
-          "root_pane": 11
+          "focused": 9,
+          "root_pane": 9
         }
       ],
       "active_tab": 0

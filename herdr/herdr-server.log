@@ -2577,3 +2577,159 @@
 2026-10-02T04:39:42.840902Z  INFO herdr::logging: tab renamed event="tab.rename" subsystem="tab" outcome="ok" workspace_id="wM" tab_id="wM:t1"
 2026-10-02T04:39:42.841338Z  INFO herdr::logging: api request completed event="api.request.complete" subsystem="api" outcome="ok" request_id="cli:tab:rename" method="tab.rename"
 2026-10-02T04:39:47.849444Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/b0kch01/.config/herdr/session.json workspaces=1
+2026-10-02T04:40:22.147390Z  INFO herdr::logging: api request received event="api.request.start" subsystem="api" outcome="started" request_id="cli:tab:rename" method="tab.rename" changes_ui=true
+2026-10-02T04:40:22.147488Z  INFO herdr::logging: tab renamed event="tab.rename" subsystem="tab" outcome="ok" workspace_id="wM" tab_id="wM:t1"
+2026-10-02T04:40:22.147952Z  INFO herdr::logging: api request completed event="api.request.complete" subsystem="api" outcome="ok" request_id="cli:tab:rename" method="tab.rename"
+2026-10-02T04:40:26.035221Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="wM" tab_id="wM:t4"
+2026-10-02T04:40:26.035414Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="wM" tab_id="wM:t4"
+2026-10-02T04:40:26.291524Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="wM" tab_id="wM:tA"
+2026-10-02T04:40:26.291569Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="wM" tab_id="wM:tA"
+2026-10-02T04:40:27.072797Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="wM" tab_id="wM:t4"
+2026-10-02T04:40:27.072916Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="wM" tab_id="wM:t4"
+2026-10-02T04:40:27.524976Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="wM" tab_id="wM:t1"
+2026-10-02T04:40:27.525022Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="wM" tab_id="wM:t1"
+2026-10-02T04:40:28.195087Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="wM" tab_id="wM:t4"
+2026-10-02T04:40:28.195201Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="wM" tab_id="wM:t4"
+2026-10-02T04:40:28.988335Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=2 status="ExitStatus { code: 0, signal: None }"
+2026-10-02T04:40:28.989271Z  INFO herdr::pane: pane session terminated pane=2 pid=66043 signal=Hangup
+2026-10-02T04:40:29.209178Z  INFO herdr::logging: api request received event="api.request.start" subsystem="api" outcome="started" request_id="cli:tab:rename" method="tab.rename" changes_ui=true
+2026-10-02T04:40:29.209276Z  INFO herdr::logging: tab renamed event="tab.rename" subsystem="tab" outcome="ok" workspace_id="wM" tab_id="wM:tA"
+2026-10-02T04:40:29.209700Z  INFO herdr::logging: api request completed event="api.request.complete" subsystem="api" outcome="ok" request_id="cli:tab:rename" method="tab.rename"
+2026-10-02T04:40:29.952307Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=1 status="ExitStatus { code: 0, signal: None }"
+2026-10-02T04:40:29.953395Z  INFO herdr::pane: pane session terminated pane=1 pid=66042 signal=Hangup
+2026-10-02T04:40:30.153999Z  INFO herdr::logging: api request received event="api.request.start" subsystem="api" outcome="started" request_id="cli:tab:rename" method="tab.rename" changes_ui=true
+2026-10-02T04:40:30.154080Z  INFO herdr::logging: tab renamed event="tab.rename" subsystem="tab" outcome="ok" workspace_id="wM" tab_id="wM:tA"
+2026-10-02T04:40:30.154495Z  INFO herdr::logging: api request completed event="api.request.complete" subsystem="api" outcome="ok" request_id="cli:tab:rename" method="tab.rename"
+2026-10-02T04:40:30.213982Z  INFO herdr::logging: api request completed event="api.request.complete" subsystem="api" outcome="error" request_id="cli:pane:process_info" method="pane.process_info"
+2026-10-02T04:40:31.623720Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=6 rows=41 cols=130 scrollback_limit_bytes=10000000
+2026-10-02T04:40:31.633093Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=6 pid=72511
+2026-10-02T04:40:31.633480Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="wM" tab_id="wM:tC"
+2026-10-02T04:40:31.873558Z  INFO herdr::logging: api request received event="api.request.start" subsystem="api" outcome="started" request_id="cli:tab:rename" method="tab.rename" changes_ui=true
+2026-10-02T04:40:31.873642Z  INFO herdr::logging: tab renamed event="tab.rename" subsystem="tab" outcome="ok" workspace_id="wM" tab_id="wM:tC"
+2026-10-02T04:40:31.874048Z  INFO herdr::logging: api request completed event="api.request.complete" subsystem="api" outcome="ok" request_id="cli:tab:rename" method="tab.rename"
+2026-10-02T04:40:32.259631Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=7 rows=41 cols=130 scrollback_limit_bytes=10000000
+2026-10-02T04:40:32.265893Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=7 pid=72875
+2026-10-02T04:40:32.266172Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="wM" tab_id="wM:tD"
+2026-10-02T04:40:32.519383Z  INFO herdr::logging: api request received event="api.request.start" subsystem="api" outcome="started" request_id="cli:tab:rename" method="tab.rename" changes_ui=true
+2026-10-02T04:40:32.519471Z  INFO herdr::logging: tab renamed event="tab.rename" subsystem="tab" outcome="ok" workspace_id="wM" tab_id="wM:tD"
+2026-10-02T04:40:32.519886Z  INFO herdr::logging: api request completed event="api.request.complete" subsystem="api" outcome="ok" request_id="cli:tab:rename" method="tab.rename"
+2026-10-02T04:40:33.108125Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=7 status="ExitStatus { code: 0, signal: None }"
+2026-10-02T04:40:33.109178Z  INFO herdr::pane: pane session terminated pane=7 pid=72875 signal=Hangup
+2026-10-02T04:40:33.588501Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=6 status="ExitStatus { code: 0, signal: None }"
+2026-10-02T04:40:33.589579Z  INFO herdr::pane: pane session terminated pane=6 pid=72511 signal=Hangup
+2026-10-02T04:40:33.847765Z  INFO herdr::logging: api request completed event="api.request.complete" subsystem="api" outcome="error" request_id="cli:pane:process_info" method="pane.process_info"
+2026-10-02T04:40:38.595174Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/b0kch01/.config/herdr/session.json workspaces=1
+2026-10-02T04:57:20.033949Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=4 status="ExitStatus { code: 0, signal: None }"
+2026-10-02T04:57:20.035373Z  INFO herdr::pane: pane session terminated pane=4 pid=66046 signal=Hangup
+2026-10-02T04:57:20.035537Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=8 rows=41 cols=130 scrollback_limit_bytes=10000000
+2026-10-02T04:57:20.045115Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=8 pid=73958
+2026-10-02T04:57:20.045456Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="wN" pane_id=8
+2026-10-02T04:57:20.045473Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="wN"
+2026-10-02T04:57:20.045486Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="wN" tab_id="wN:t1"
+2026-10-02T04:57:20.211012Z  INFO herdr::logging: api request received event="api.request.start" subsystem="api" outcome="started" request_id="cli:workspace:rename" method="workspace.rename" changes_ui=true
+2026-10-02T04:57:20.211091Z  INFO herdr::logging: workspace renamed event="workspace.rename" subsystem="workspace" outcome="ok" workspace_id="wN"
+2026-10-02T04:57:20.211508Z  INFO herdr::logging: api request completed event="api.request.complete" subsystem="api" outcome="ok" request_id="cli:workspace:rename" method="workspace.rename"
+2026-10-02T04:57:20.314245Z  INFO herdr::logging: api request received event="api.request.start" subsystem="api" outcome="started" request_id="cli:tab:rename" method="tab.rename" changes_ui=true
+2026-10-02T04:57:20.314335Z  INFO herdr::logging: tab renamed event="tab.rename" subsystem="tab" outcome="ok" workspace_id="wN" tab_id="wN:t1"
+2026-10-02T04:57:20.314779Z  INFO herdr::logging: api request completed event="api.request.complete" subsystem="api" outcome="ok" request_id="cli:tab:rename" method="tab.rename"
+2026-10-02T04:57:25.330113Z  INFO herdr::persist::writer: preserved session recovery copy event="persist.backup" subsystem="persist" outcome="ok" path=/Users/b0kch01/.config/herdr/session.json backup_path=/Users/b0kch01/.config/herdr/session-snapshots/session-000000000000000000001790917045317035000-66041-0.json
+2026-10-02T04:57:25.331923Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/b0kch01/.config/herdr/session.json workspaces=1
+2026-10-02T04:59:08.231738Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=8 status="ExitStatus { code: 0, signal: None }"
+2026-10-02T04:59:08.232671Z  INFO herdr::pane: pane session terminated pane=8 pid=73958 signal=Hangup
+2026-10-02T04:59:08.232819Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=9 rows=41 cols=130 scrollback_limit_bytes=10000000
+2026-10-02T04:59:08.237985Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=9 pid=74341
+2026-10-02T04:59:08.238326Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="wP" pane_id=9
+2026-10-02T04:59:08.238362Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="wP"
+2026-10-02T04:59:08.238374Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="wP" tab_id="wP:t1"
+2026-10-02T04:59:08.388670Z  INFO herdr::logging: api request received event="api.request.start" subsystem="api" outcome="started" request_id="cli:workspace:rename" method="workspace.rename" changes_ui=true
+2026-10-02T04:59:08.388744Z  INFO herdr::logging: workspace renamed event="workspace.rename" subsystem="workspace" outcome="ok" workspace_id="wP"
+2026-10-02T04:59:08.389207Z  INFO herdr::logging: api request completed event="api.request.complete" subsystem="api" outcome="ok" request_id="cli:workspace:rename" method="workspace.rename"
+2026-10-02T04:59:08.490570Z  INFO herdr::logging: api request received event="api.request.start" subsystem="api" outcome="started" request_id="cli:tab:rename" method="tab.rename" changes_ui=true
+2026-10-02T04:59:08.490661Z  INFO herdr::logging: tab renamed event="tab.rename" subsystem="tab" outcome="ok" workspace_id="wP" tab_id="wP:t1"
+2026-10-02T04:59:08.491106Z  INFO herdr::logging: api request completed event="api.request.complete" subsystem="api" outcome="ok" request_id="cli:tab:rename" method="tab.rename"
+2026-10-02T04:59:09.182202Z  INFO herdr::server::headless: client detached client_id=2
+2026-10-02T04:59:13.495888Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/b0kch01/.config/herdr/session.json workspaces=1
+2026-10-02T05:09:20.179367Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-10-02T05:39:20.190519Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-10-02T06:09:20.196351Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-10-02T06:39:20.204011Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-10-02T07:09:20.209912Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-10-02T07:39:20.215561Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-10-02T08:09:20.219687Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-10-02T08:39:20.224335Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-10-02T09:09:20.231473Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-10-02T09:39:20.236723Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-10-02T10:09:20.242413Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-10-02T10:39:20.246877Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-10-02T11:09:20.253233Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-10-02T11:39:20.259583Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-10-02T12:09:20.265277Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-10-02T12:39:20.271367Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-10-02T13:09:20.275014Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-10-02T13:39:20.280304Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-10-02T14:09:20.285569Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-10-02T14:39:20.289509Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-10-02T15:09:20.293893Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-10-02T15:39:20.297084Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-10-02T16:09:20.299338Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-10-02T17:46:19.279222Z  INFO herdr::server::headless: client connected client_id=4 cols=130 rows=41 cell_width_px=14 cell_height_px=30 surface_active=true render_encoding=SemanticFrame
+2026-10-02T17:57:48.864023Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-10-02T18:37:08.570564Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-10-02T19:02:31.877069Z  INFO herdr::logging: api request received event="api.request.start" subsystem="api" outcome="started" request_id="cli:tab:rename" method="tab.rename" changes_ui=true
+2026-10-02T19:02:31.877148Z  INFO herdr::logging: tab renamed event="tab.rename" subsystem="tab" outcome="ok" workspace_id="wP" tab_id="wP:t1"
+2026-10-02T19:02:31.878401Z  INFO herdr::logging: api request completed event="api.request.complete" subsystem="api" outcome="ok" request_id="cli:tab:rename" method="tab.rename"
+2026-10-02T19:02:36.893641Z  INFO herdr::persist::writer: preserved session recovery copy event="persist.backup" subsystem="persist" outcome="ok" path=/Users/b0kch01/.config/herdr/session.json backup_path=/Users/b0kch01/.config/herdr/session-snapshots/session-000000000000000000001790967756883224000-66041-0.json
+2026-10-02T19:02:36.894815Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/b0kch01/.config/herdr/session.json workspaces=1
+2026-10-02T19:03:07.338482Z  INFO herdr::logging: api request received event="api.request.start" subsystem="api" outcome="started" request_id="cli:tab:rename" method="tab.rename" changes_ui=true
+2026-10-02T19:03:07.338571Z  INFO herdr::logging: tab renamed event="tab.rename" subsystem="tab" outcome="ok" workspace_id="wP" tab_id="wP:t1"
+2026-10-02T19:03:07.338993Z  INFO herdr::logging: api request completed event="api.request.complete" subsystem="api" outcome="ok" request_id="cli:tab:rename" method="tab.rename"
+2026-10-02T19:03:12.343945Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/b0kch01/.config/herdr/session.json workspaces=1
+2026-10-02T19:03:29.581421Z  INFO herdr::logging: api request received event="api.request.start" subsystem="api" outcome="started" request_id="cli:tab:rename" method="tab.rename" changes_ui=true
+2026-10-02T19:03:29.581818Z  INFO herdr::logging: tab renamed event="tab.rename" subsystem="tab" outcome="ok" workspace_id="wP" tab_id="wP:t1"
+2026-10-02T19:03:29.582276Z  INFO herdr::logging: api request completed event="api.request.complete" subsystem="api" outcome="ok" request_id="cli:tab:rename" method="tab.rename"
+2026-10-02T19:03:34.589711Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/b0kch01/.config/herdr/session.json workspaces=1
+2026-10-02T19:03:39.158373Z  INFO herdr::logging: api request received event="api.request.start" subsystem="api" outcome="started" request_id="cli:tab:rename" method="tab.rename" changes_ui=true
+2026-10-02T19:03:39.158472Z  INFO herdr::logging: tab renamed event="tab.rename" subsystem="tab" outcome="ok" workspace_id="wP" tab_id="wP:t1"
+2026-10-02T19:03:39.158936Z  INFO herdr::logging: api request completed event="api.request.complete" subsystem="api" outcome="ok" request_id="cli:tab:rename" method="tab.rename"
+2026-10-02T19:03:44.163583Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/b0kch01/.config/herdr/session.json workspaces=1
+2026-10-02T19:04:32.666780Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=9 status="ExitStatus { code: 127, signal: None }"
+2026-10-02T19:04:32.667225Z  INFO herdr::pane: pane session terminated pane=9 pid=74341 signal=Hangup
+2026-10-02T19:04:32.667375Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=10 rows=41 cols=130 scrollback_limit_bytes=10000000
+2026-10-02T19:04:32.670769Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=10 pid=95246
+2026-10-02T19:04:32.670952Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="wQ" pane_id=10
+2026-10-02T19:04:32.670965Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="wQ"
+2026-10-02T19:04:32.670974Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="wQ" tab_id="wQ:t1"
+2026-10-02T19:04:32.817055Z  INFO herdr::logging: api request received event="api.request.start" subsystem="api" outcome="started" request_id="cli:workspace:rename" method="workspace.rename" changes_ui=true
+2026-10-02T19:04:32.817129Z  INFO herdr::logging: workspace renamed event="workspace.rename" subsystem="workspace" outcome="ok" workspace_id="wQ"
+2026-10-02T19:04:32.817551Z  INFO herdr::logging: api request completed event="api.request.complete" subsystem="api" outcome="ok" request_id="cli:workspace:rename" method="workspace.rename"
+2026-10-02T19:04:32.915556Z  INFO herdr::logging: api request received event="api.request.start" subsystem="api" outcome="started" request_id="cli:tab:rename" method="tab.rename" changes_ui=true
+2026-10-02T19:04:32.915626Z  INFO herdr::logging: tab renamed event="tab.rename" subsystem="tab" outcome="ok" workspace_id="wQ" tab_id="wQ:t1"
+2026-10-02T19:04:32.916026Z  INFO herdr::logging: api request completed event="api.request.complete" subsystem="api" outcome="ok" request_id="cli:tab:rename" method="tab.rename"
+2026-10-02T19:04:37.921505Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/b0kch01/.config/herdr/session.json workspaces=1
+2026-10-02T19:05:13.635881Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=10 status="ExitStatus { code: 0, signal: None }"
+2026-10-02T19:05:13.636530Z  INFO herdr::pane: pane session terminated pane=10 pid=95246 signal=Hangup
+2026-10-02T19:05:13.636694Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=11 rows=41 cols=130 scrollback_limit_bytes=10000000
+2026-10-02T19:05:13.640653Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=11 pid=95971
+2026-10-02T19:05:13.640856Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="wR" pane_id=11
+2026-10-02T19:05:13.640867Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="wR"
+2026-10-02T19:05:13.640875Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="wR" tab_id="wR:t1"
+2026-10-02T19:05:13.783768Z  INFO herdr::logging: api request received event="api.request.start" subsystem="api" outcome="started" request_id="cli:workspace:rename" method="workspace.rename" changes_ui=true
+2026-10-02T19:05:13.783846Z  INFO herdr::logging: workspace renamed event="workspace.rename" subsystem="workspace" outcome="ok" workspace_id="wR"
+2026-10-02T19:05:13.784231Z  INFO herdr::logging: api request completed event="api.request.complete" subsystem="api" outcome="ok" request_id="cli:workspace:rename" method="workspace.rename"
+2026-10-02T19:05:13.883892Z  INFO herdr::logging: api request received event="api.request.start" subsystem="api" outcome="started" request_id="cli:tab:rename" method="tab.rename" changes_ui=true
+2026-10-02T19:05:13.883976Z  INFO herdr::logging: tab renamed event="tab.rename" subsystem="tab" outcome="ok" workspace_id="wR" tab_id="wR:t1"
+2026-10-02T19:05:13.884372Z  INFO herdr::logging: api request completed event="api.request.complete" subsystem="api" outcome="ok" request_id="cli:tab:rename" method="tab.rename"
+2026-10-02T19:05:18.889604Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/b0kch01/.config/herdr/session.json workspaces=1
+2026-10-02T19:07:22.573958Z  INFO herdr::logging: api request received event="api.request.start" subsystem="api" outcome="started" request_id="cli:tab:rename" method="tab.rename" changes_ui=true
+2026-10-02T19:07:22.574071Z  INFO herdr::logging: tab renamed event="tab.rename" subsystem="tab" outcome="ok" workspace_id="wR" tab_id="wR:t1"
+2026-10-02T19:07:22.574518Z  INFO herdr::logging: api request completed event="api.request.complete" subsystem="api" outcome="ok" request_id="cli:tab:rename" method="tab.rename"
+2026-10-02T19:07:22.766382Z  INFO herdr::logging: api request received event="api.request.start" subsystem="api" outcome="started" request_id="cli:tab:rename" method="tab.rename" changes_ui=true
+2026-10-02T19:07:22.766460Z  INFO herdr::logging: tab renamed event="tab.rename" subsystem="tab" outcome="ok" workspace_id="wR" tab_id="wR:t1"
+2026-10-02T19:07:22.766886Z  INFO herdr::logging: api request completed event="api.request.complete" subsystem="api" outcome="ok" request_id="cli:tab:rename" method="tab.rename"
+2026-10-02T19:07:23.026970Z  INFO herdr::logging: api request received event="api.request.start" subsystem="api" outcome="started" request_id="cli:tab:rename" method="tab.rename" changes_ui=true
+2026-10-02T19:07:23.027052Z  INFO herdr::logging: tab renamed event="tab.rename" subsystem="tab" outcome="ok" workspace_id="wR" tab_id="wR:t1"
+2026-10-02T19:07:23.027471Z  INFO herdr::logging: api request completed event="api.request.complete" subsystem="api" outcome="ok" request_id="cli:tab:rename" method="tab.rename"
+2026-10-02T19:07:24.199558Z  INFO herdr::logging: api request received event="api.request.start" subsystem="api" outcome="started" request_id="cli:tab:rename" method="tab.rename" changes_ui=true
+2026-10-02T19:07:24.199655Z  INFO herdr::logging: tab renamed event="tab.rename" subsystem="tab" outcome="ok" workspace_id="wR" tab_id="wR:t1"
+2026-10-02T19:07:24.200093Z  INFO herdr::logging: api request completed event="api.request.complete" subsystem="api" outcome="ok" request_id="cli:tab:rename" method="tab.rename"
+2026-10-02T19:07:29.205770Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/b0kch01/.config/herdr/session.json workspaces=1

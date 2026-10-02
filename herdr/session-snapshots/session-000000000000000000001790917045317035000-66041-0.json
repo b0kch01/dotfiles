@@ -2,31 +2,31 @@
   "version": 3,
   "workspaces": [
     {
-      "id": "wR",
-      "custom_name": "[1] ~",
-      "identity_cwd": "/Users/b0kch01/.dotfiles",
+      "id": "wM",
+      "custom_name": "[1] .dotfiles",
+      "identity_cwd": "/Users/b0kch01/.config/herdr",
       "public_pane_numbers": {
-        "11": 1
+        "4": 10
       },
-      "next_public_pane_number": 2,
+      "next_public_pane_number": 14,
       "public_tab_numbers": [
-        1
+        10
       ],
-      "next_public_tab_number": 2,
+      "next_public_tab_number": 14,
       "tabs": [
         {
-          "custom_name": "[1] .dotfiles › bash",
+          "custom_name": "[1] herdr › zsh",
           "layout": {
-            "Pane": 11
+            "Pane": 4
           },
           "panes": {
-            "11": {
-              "cwd": "/Users/b0kch01/.dotfiles"
+            "4": {
+              "cwd": "/Users/b0kch01/.config/herdr"
             }
           },
           "zoomed": false,
-          "focused": 11,
-          "root_pane": 11
+          "focused": 4,
+          "root_pane": 4
         }
       ],
       "active_tab": 0
