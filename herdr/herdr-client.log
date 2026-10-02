@@ -33,3 +33,6 @@
 2026-09-23T16:06:26.117683Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=7414
 2026-09-23T16:06:26.118312Z  INFO herdr::client: connecting to server path=/Users/nathanchoi/.config/herdr/herdr-client.sock
 2026-09-23T16:06:26.265843Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.1
+2026-10-02T04:39:20.219746Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=66040
+2026-10-02T04:39:20.220044Z  INFO herdr::client: connecting to server path=/Users/b0kch01/.config/herdr/herdr-client.sock
+2026-10-02T04:39:20.272413Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.3

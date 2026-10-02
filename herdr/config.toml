@@ -5,6 +5,7 @@ name = "one-dark"
 auto_switch = false
 
 [ui]
+prompt_new_tab_name = false
 status_indicators = "dots"
 accent = "#ff6600"
 
