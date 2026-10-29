@@ -40,3 +40,76 @@
 2026-10-02T17:46:19.184464Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=90258
 2026-10-02T17:46:19.184655Z  INFO herdr::client: connecting to server path=/Users/b0kch01/.config/herdr/herdr-client.sock
 2026-10-02T17:46:19.278420Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.3
+2026-10-06T22:41:18.647018Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=57846
+2026-10-06T22:41:18.647113Z  INFO herdr::client: connecting to server path=/Users/nathanchoi/.config/herdr/herdr-client.sock
+2026-10-06T22:41:18.712314Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.1
+2026-10-06T22:41:20.207235Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=57846
+2026-10-06T22:41:21.564903Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=57859
+2026-10-06T22:41:21.564972Z  INFO herdr::client: connecting to server path=/Users/nathanchoi/.config/herdr/herdr-client.sock
+2026-10-06T22:41:21.621560Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.1
+2026-10-06T22:41:22.239637Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=57859
+2026-10-06T22:41:23.784947Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=57866
+2026-10-06T22:41:23.784990Z  INFO herdr::client: connecting to server path=/Users/nathanchoi/.config/herdr/herdr-client.sock
+2026-10-06T22:41:23.799936Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.1
+2026-10-09T00:17:54.988015Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=57866
+2026-10-09T00:17:57.121519Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=51049
+2026-10-09T00:17:57.121567Z  INFO herdr::client: connecting to server path=/Users/nathanchoi/.config/herdr/herdr-client.sock
+2026-10-09T00:17:57.144972Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.1
+2026-10-09T00:18:00.522798Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=51049
+2026-10-09T00:40:39.201329Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=52240
+2026-10-09T00:40:39.201589Z  INFO herdr::client: connecting to server path=/Users/nathanchoi/.config/herdr/herdr-client.sock
+2026-10-09T00:40:39.274390Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.1
+2026-10-09T00:40:54.228005Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=52240
+2026-10-09T00:41:34.150165Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=52270
+2026-10-09T00:41:34.151225Z  INFO herdr::client: connecting to server path=/Users/nathanchoi/.config/herdr/herdr-client.sock
+2026-10-09T00:41:34.202688Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.1
+2026-10-09T15:25:21.935986Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=52270
+2026-10-09T15:25:27.656759Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=69535
+2026-10-09T15:25:27.656888Z  INFO herdr::client: connecting to server path=/Users/nathanchoi/.config/herdr/herdr-client.sock
+2026-10-09T15:25:27.877090Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.1
+2026-10-09T15:25:37.829956Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=69535
+2026-10-09T15:25:59.492075Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=70488
+2026-10-09T15:25:59.492250Z  INFO herdr::client: connecting to server path=/Users/nathanchoi/.config/herdr/herdr-client.sock
+2026-10-09T15:25:59.545821Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.3
+2026-10-10T16:44:02.082664Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=70488
+2026-10-10T16:44:03.465560Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=14083
+2026-10-10T16:44:03.465612Z  INFO herdr::client: connecting to server path=/Users/nathanchoi/.config/herdr/herdr-client.sock
+2026-10-10T16:44:03.597710Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.3
+2026-10-10T16:52:14.440617Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=14083
+2026-10-10T16:52:15.337533Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=38441
+2026-10-10T16:52:15.337573Z  INFO herdr::client: connecting to server path=/Users/nathanchoi/.config/herdr/herdr-client.sock
+2026-10-10T16:52:15.454477Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.3
+2026-10-10T17:31:02.811634Z  WARN herdr::config::keybinds: config diagnostic empty custom command: keys.command[0].command; disabling custom command
+2026-10-10T17:31:02.819382Z  WARN herdr::config::keybinds: config diagnostic empty custom command: keys.command[0].command; disabling custom command
+2026-10-12T20:08:19.338438Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=38441
+2026-10-12T20:11:56.430013Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=3405
+2026-10-12T20:11:56.430114Z  INFO herdr::client: connecting to server path=/Users/nathanchoi/.config/herdr/herdr-client.sock
+2026-10-12T20:11:56.595068Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.3
+2026-10-14T07:25:17.758152Z  WARN herdr::sound: sound playback failed sound=Done err=player exited with exit status: 1: Error: AudioQueueStart failed (-66681)
+2026-10-16T12:17:44.279928Z  WARN herdr::sound: sound playback failed sound=Done err=player exited with exit status: 1: Error: AudioQueueStart failed (-66681)
+2026-10-23T01:11:31.869261Z  WARN herdr::sound: sound playback failed sound=Done err=player exited with exit status: 1: Error: AudioQueueStart failed (-66681)
+2026-10-23T01:11:31.869822Z  WARN herdr::sound: sound playback failed sound=Done err=player exited with exit status: 1: Error: AudioQueueStart failed (-66681)
+2026-10-23T01:11:31.869378Z  WARN herdr::sound: sound playback failed sound=Done err=player exited with exit status: 1: Error: AudioQueueStart failed (-66681)
+2026-10-23T01:11:31.870021Z  WARN herdr::sound: sound playback failed sound=Done err=player exited with exit status: 1: Error: AudioQueueStart failed (-66681)
+2026-10-23T01:11:31.870534Z  WARN herdr::sound: sound playback failed sound=Done err=player exited with exit status: 1: Error: AudioQueueStart failed (-66681)
+2026-10-23T01:11:31.870298Z  WARN herdr::sound: sound playback failed sound=Done err=player exited with exit status: 1: Error: AudioQueueStart failed (-66681)
+2026-10-23T01:11:31.871434Z  WARN herdr::sound: sound playback failed sound=Done err=player exited with exit status: 1: Error: AudioQueueStart failed (-66681)
+2026-10-23T01:11:31.871761Z  WARN herdr::sound: sound playback failed sound=Done err=player exited with exit status: 1: Error: AudioQueueStart failed (-66681)
+2026-10-23T01:11:31.871824Z  WARN herdr::sound: sound playback failed sound=Done err=player exited with exit status: 1: Error: AudioQueueStart failed (-66681)
+2026-10-23T01:11:31.913664Z  WARN herdr::sound: sound playback failed sound=Done err=player exited with exit status: 1: Error: AudioQueueStart failed (-66681)
+2026-10-23T01:11:31.913711Z  WARN herdr::sound: sound playback failed sound=Done err=player exited with exit status: 1: Error: AudioQueueStart failed (-66681)
+2026-10-23T01:11:54.995161Z  WARN herdr::sound: sound playback failed sound=Done err=player exited with exit status: 1: Error: AudioQueueStart failed (-66681)
+2026-10-26T17:16:09.747894Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=3405
+2026-10-26T17:16:11.865853Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=94047
+2026-10-26T17:16:11.865926Z  INFO herdr::client: connecting to server path=/Users/nathanchoi/.config/herdr/herdr-client.sock
+2026-10-26T17:16:12.024843Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.3
+2026-10-26T17:42:14.070627Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=94047
+2026-10-26T17:42:27.970374Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=25266
+2026-10-26T17:42:27.970410Z  INFO herdr::client: connecting to server path=/Users/nathanchoi/.config/herdr/herdr-client.sock
+2026-10-26T17:42:28.117848Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.5
+2026-10-26T23:35:04.527400Z  WARN herdr::sound: sound playback failed sound=Done err=player exited with exit status: 1: Error: AudioQueueStart failed (-66681)
+2026-10-28T20:36:16.676591Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=25266
+2026-10-28T20:38:52.503377Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=438
+2026-10-28T20:38:52.504659Z  INFO herdr::client: connecting to server path=/Users/nathanchoi/.config/herdr/herdr-client.sock
+2026-10-28T20:38:52.810718Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.5
+2026-10-29T17:10:11.648602Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=438

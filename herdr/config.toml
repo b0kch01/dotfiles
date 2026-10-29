@@ -12,6 +12,17 @@ accent = "#ff6600"
 [ui.toast]
 delivery = "herdr"
 
+[ui.sidebar.agents]
+row_gap = 0
+
+[ui.sidebar.agents.rows_by_agent]
+codex = [
+  [{token="state_text"}, "terminal_title"]
+]
+claude = [
+  [{token="state_text"}, "terminal_title"]
+]
+
 [keys]
 prefix = "ctrl+a"
 navigate_workspace_up = "k"
@@ -23,6 +34,13 @@ focus_pane_left = ""
 focus_pane_down = ""
 focus_pane_up = ""
 focus_pane_right = ""
+
+# HERDR Bar Plugin
+[[keys.command]]
+key = "prefix+k"
+type = "plugin_action"
+command = "herdr-bar.open"
+description = "command bar"
 
 [[keys.command]]
 key = "ctrl+h"

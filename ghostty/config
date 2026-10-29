@@ -9,6 +9,7 @@ palette = 8=#9ea7b3
 
 font-family =  GeistMono Nerd Font Propo
 font-size = 11.5
+font-codepoint-map = U+E1A0-U+E1B7=Herdr Agent Icons Max
 
 window-padding-x = 5,0
 window-padding-y = 5,0
@@ -20,3 +21,4 @@ macos-titlebar-style = hidden
 
 keybind = ctrl+v=paste_from_clipboard
 keybind = shift+enter=text:\n
+

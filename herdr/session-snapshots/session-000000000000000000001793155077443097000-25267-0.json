@@ -1,0 +1,592 @@
+{
+  "version": 3,
+  "workspaces": [
+    {
+      "id": "w8",
+      "custom_name": "1023-contract-refactor",
+      "identity_cwd": "/Users/nathanchoi/Documents/Code/emberapp-worktrees/nathan-emb-970-contract-management/contract-pipeline",
+      "public_pane_numbers": {
+        "12": 28,
+        "10": 20,
+        "8": 23,
+        "9": 24,
+        "11": 21,
+        "7": 14
+      },
+      "next_public_pane_number": 34,
+      "public_tab_numbers": [
+        2,
+        3
+      ],
+      "next_public_tab_number": 7,
+      "tabs": [
+        {
+          "custom_name": "contract › 󰚩 Fix CI and sync PR stack",
+          "layout": {
+            "Split": {
+              "direction": "Horizontal",
+              "ratio": 0.443038,
+              "first": {
+                "Pane": 7
+              },
+              "second": {
+                "Split": {
+                  "direction": "Vertical",
+                  "ratio": 0.5,
+                  "first": {
+                    "Pane": 8
+                  },
+                  "second": {
+                    "Pane": 9
+                  }
+                }
+              }
+            }
+          },
+          "panes": {
+            "8": {
+              "cwd": "/Users/nathanchoi/Documents/Code/emberapp-worktrees/nathan-emb-970-contract-management/client"
+            },
+            "9": {
+              "cwd": "/Users/nathanchoi/Documents/Code/emberapp-worktrees/nathan-emb-970-contract-management/server"
+            },
+            "7": {
+              "cwd": "/Users/nathanchoi/Documents/Code/emberapp-worktrees/nathan-emb-970-contract-management/contract-pipeline"
+            }
+          },
+          "zoomed": false,
+          "focused": 7,
+          "root_pane": 7
+        },
+        {
+          "custom_name": "contract › zsh",
+          "layout": {
+            "Split": {
+              "direction": "Horizontal",
+              "ratio": 0.39908257,
+              "first": {
+                "Pane": 10
+              },
+              "second": {
+                "Split": {
+                  "direction": "Vertical",
+                  "ratio": 0.754717,
+                  "first": {
+                    "Pane": 11
+                  },
+                  "second": {
+                    "Pane": 12
+                  }
+                }
+              }
+            }
+          },
+          "panes": {
+            "11": {
+              "cwd": "/Users/nathanchoi/Documents/Code/emberapp-worktrees/nathan-emb-970-contract-management/contract-pipeline"
+            },
+            "12": {
+              "cwd": "/Users/nathanchoi/Documents/Code/emberapp-worktrees/nathan-emb-970-contract-management"
+            },
+            "10": {
+              "cwd": "/Users/nathanchoi/Documents/Code/emberapp-worktrees/nathan-emb-970-contract-management/contract-pipeline"
+            }
+          },
+          "zoomed": false,
+          "focused": 11,
+          "root_pane": 10
+        }
+      ],
+      "active_tab": 0
+    },
+    {
+      "id": "wE",
+      "custom_name": "1083-ushv-coding",
+      "identity_cwd": "/Users/nathanchoi/Documents/Code/emberapp-worktrees/emberapp-nathan-emb-1083-ushv-coding",
+      "public_pane_numbers": {
+        "13": 5,
+        "14": 8,
+        "16": 14,
+        "15": 11
+      },
+      "next_public_pane_number": 15,
+      "public_tab_numbers": [
+        1,
+        3,
+        4
+      ],
+      "next_public_tab_number": 5,
+      "tabs": [
+        {
+          "custom_name": "EMB-1083 › 󰚩 Draft coding and",
+          "layout": {
+            "Split": {
+              "direction": "Horizontal",
+              "ratio": 0.5,
+              "first": {
+                "Pane": 13
+              },
+              "second": {
+                "Pane": 14
+              }
+            }
+          },
+          "panes": {
+            "13": {
+              "cwd": "/Users/nathanchoi/Documents/Code/emberapp-worktrees/emberapp-nathan-emb-1083-ushv-coding"
+            },
+            "14": {
+              "cwd": "/Users/nathanchoi/Documents/Code/emberapp-worktrees/emberapp-nathan-emb-1083-ushv-coding/tools/outputs/pva-claims-report-2026-10-16"
+            }
+          },
+          "zoomed": false,
+          "focused": 13,
+          "root_pane": 13
+        },
+        {
+          "custom_name": "EMB-1083 › zsh",
+          "layout": {
+            "Pane": 15
+          },
+          "panes": {
+            "15": {
+              "cwd": "/Users/nathanchoi/Documents/Code/emberapp-worktrees/emberapp-nathan-emb-1083-ushv-coding"
+            }
+          },
+          "zoomed": false,
+          "focused": 15,
+          "root_pane": 15
+        },
+        {
+          "custom_name": "EMB-1083 › zsh",
+          "layout": {
+            "Pane": 16
+          },
+          "panes": {
+            "16": {
+              "cwd": "/Users/nathanchoi/Documents/Code/emberapp-worktrees/emberapp-nathan-emb-1083-ushv-coding"
+            }
+          },
+          "zoomed": false,
+          "focused": 16,
+          "root_pane": 16
+        }
+      ],
+      "active_tab": 0
+    },
+    {
+      "id": "wT",
+      "custom_name": null,
+      "identity_cwd": "/Users/nathanchoi/Documents/Code/emberapp-worktrees/emberapp-nathan-emb-881-additional-context-input-when-denial-agent-concludes-with-a/tools",
+      "public_pane_numbers": {
+        "20": 1
+      },
+      "next_public_pane_number": 2,
+      "public_tab_numbers": [
+        1
+      ],
+      "next_public_tab_number": 2,
+      "tabs": [
+        {
+          "custom_name": "tools › zsh",
+          "layout": {
+            "Pane": 20
+          },
+          "panes": {
+            "20": {
+              "cwd": "/Users/nathanchoi/Documents/Code/emberapp-worktrees/emberapp-nathan-emb-881-additional-context-input-when-denial-agent-concludes-with-a/tools"
+            }
+          },
+          "zoomed": false,
+          "focused": 20,
+          "root_pane": 20
+        }
+      ],
+      "active_tab": 0
+    },
+    {
+      "id": "wV",
+      "custom_name": null,
+      "identity_cwd": "/Users/nathanchoi/Documents/Code/emberapp-worktrees/emberapp-ratio-ushv-dashboard",
+      "public_pane_numbers": {
+        "21": 1,
+        "23": 2,
+        "22": 4,
+        "24": 3
+      },
+      "next_public_pane_number": 5,
+      "public_tab_numbers": [
+        1
+      ],
+      "next_public_tab_number": 2,
+      "tabs": [
+        {
+          "custom_name": "zsh",
+          "layout": {
+            "Split": {
+              "direction": "Vertical",
+              "ratio": 0.8196721,
+              "first": {
+                "Split": {
+                  "direction": "Horizontal",
+                  "ratio": 0.66071427,
+                  "first": {
+                    "Pane": 21
+                  },
+                  "second": {
+                    "Pane": 22
+                  }
+                }
+              },
+              "second": {
+                "Split": {
+                  "direction": "Horizontal",
+                  "ratio": 0.5,
+                  "first": {
+                    "Pane": 23
+                  },
+                  "second": {
+                    "Pane": 24
+                  }
+                }
+              }
+            }
+          },
+          "panes": {
+            "23": {
+              "cwd": "/Users/nathanchoi/Documents/Code/emberapp-worktrees/emberapp-ratio-ushv-dashboard/server"
+            },
+            "22": {
+              "cwd": "/Users/nathanchoi/Documents/Code/emberapp-worktrees/emberapp-ratio-ushv-dashboard"
+            },
+            "21": {
+              "cwd": "/Users/nathanchoi/Documents/Code/emberapp-worktrees/emberapp-ratio-ushv-dashboard"
+            },
+            "24": {
+              "cwd": "/Users/nathanchoi/Documents/Code/emberapp-worktrees/emberapp-ratio-ushv-dashboard/client"
+            }
+          },
+          "zoomed": false,
+          "focused": 21,
+          "root_pane": 21
+        }
+      ],
+      "active_tab": 0
+    },
+    {
+      "id": "wN",
+      "custom_name": "ushv-fee-schedule",
+      "identity_cwd": "/Users/nathanchoi/Documents/Code/emberapp-worktrees/emberapp-nathan-ushv-contract-fee-schedule-pipeline/tools/contract-fee-schedules",
+      "public_pane_numbers": {
+        "46": 26,
+        "44": 24,
+        "25": 13,
+        "39": 19,
+        "36": 16,
+        "45": 25,
+        "42": 22,
+        "40": 20
+      },
+      "next_public_pane_number": 27,
+      "public_tab_numbers": [
+        1,
+        11
+      ],
+      "next_public_tab_number": 12,
+      "tabs": [
+        {
+          "custom_name": "contract-fee › 󰚩 Interface dropdown",
+          "layout": {
+            "Split": {
+              "direction": "Horizontal",
+              "ratio": 0.18587361,
+              "first": {
+                "Pane": 25
+              },
+              "second": {
+                "Split": {
+                  "direction": "Vertical",
+                  "ratio": 0.6923077,
+                  "first": {
+                    "Split": {
+                      "direction": "Horizontal",
+                      "ratio": 0.5,
+                      "first": {
+                        "Pane": 36
+                      },
+                      "second": {
+                        "Split": {
+                          "direction": "Vertical",
+                          "ratio": 0.6666667,
+                          "first": {
+                            "Pane": 44
+                          },
+                          "second": {
+                            "Pane": 46
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "second": {
+                    "Split": {
+                      "direction": "Horizontal",
+                      "ratio": 0.5,
+                      "first": {
+                        "Pane": 42
+                      },
+                      "second": {
+                        "Pane": 45
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "panes": {
+            "46": {
+              "cwd": "/Users/nathanchoi/Documents/Code/emberapp-worktrees/emberapp-nathan-managed-fee-schedule-versions/client"
+            },
+            "25": {
+              "cwd": "/Users/nathanchoi/Documents/Code/emberapp-worktrees/emberapp-nathan-ushv-contract-fee-schedule-pipeline/tools/contract-fee-schedules",
+              "agent_session": {
+                "source": "herdr:claude",
+                "agent": "claude",
+                "kind": "id",
+                "value": "c9790411-75b1-4ad1-b4d5-37dfda51d568"
+              }
+            },
+            "42": {
+              "cwd": "/Users/nathanchoi/Documents/Code/emberapp-worktrees/emberapp-nathan-ushv-contract-fee-schedule-pipeline/tools/contract-fee-schedules",
+              "agent_session": {
+                "source": "herdr:claude",
+                "agent": "claude",
+                "kind": "id",
+                "value": "8003a787-f49f-4e09-afaf-e648636502c8"
+              }
+            },
+            "36": {
+              "cwd": "/Users/nathanchoi/Documents/Code/emberapp-worktrees/emberapp-nathan-ushv-contract-fee-schedule-pipeline/tools/contract-fee-schedules",
+              "agent_session": {
+                "source": "herdr:claude",
+                "agent": "claude",
+                "kind": "id",
+                "value": "1b15637b-cdaf-4f6d-9b59-caaa68d6f475"
+              }
+            },
+            "44": {
+              "cwd": "/Users/nathanchoi/Documents/Code/emberapp-worktrees/emberapp-nathan-managed-fee-schedule-versions/server"
+            },
+            "45": {
+              "cwd": "/Users/nathanchoi/Documents/Code/emberapp-worktrees/emberapp-nathan-ushv-contract-fee-schedule-pipeline/tools/contract-fee-schedules"
+            }
+          },
+          "zoomed": false,
+          "focused": 36,
+          "root_pane": 25
+        },
+        {
+          "custom_name": "client › zsh",
+          "layout": {
+            "Split": {
+              "direction": "Horizontal",
+              "ratio": 0.5,
+              "first": {
+                "Pane": 39
+              },
+              "second": {
+                "Pane": 40
+              }
+            }
+          },
+          "panes": {
+            "40": {
+              "cwd": "/Users/nathanchoi/Documents/Code/emberapp-worktrees/emberapp-nathan-ushv-contract-fee-schedule-pipeline/client"
+            },
+            "39": {
+              "cwd": "/Users/nathanchoi/Documents/Code/emberapp-worktrees/emberapp-nathan-ushv-contract-fee-schedule-pipeline/server"
+            }
+          },
+          "zoomed": false,
+          "focused": 40,
+          "root_pane": 39
+        }
+      ],
+      "active_tab": 0
+    },
+    {
+      "id": "wW",
+      "custom_name": null,
+      "identity_cwd": "/Users/nathanchoi/Documents/Code/emberapp-worktrees/nathan-ushv-underpayment-product-routing",
+      "public_pane_numbers": {
+        "27": 7,
+        "26": 1,
+        "29": 15,
+        "28": 12,
+        "30": 14
+      },
+      "next_public_pane_number": 16,
+      "public_tab_numbers": [
+        1
+      ],
+      "next_public_tab_number": 2,
+      "tabs": [
+        {
+          "custom_name": "zsh",
+          "layout": {
+            "Split": {
+              "direction": "Horizontal",
+              "ratio": 0.5,
+              "first": {
+                "Split": {
+                  "direction": "Vertical",
+                  "ratio": 0.59016395,
+                  "first": {
+                    "Pane": 26
+                  },
+                  "second": {
+                    "Pane": 27
+                  }
+                }
+              },
+              "second": {
+                "Split": {
+                  "direction": "Vertical",
+                  "ratio": 0.5,
+                  "first": {
+                    "Split": {
+                      "direction": "Horizontal",
+                      "ratio": 0.5,
+                      "first": {
+                        "Pane": 28
+                      },
+                      "second": {
+                        "Pane": 29
+                      }
+                    }
+                  },
+                  "second": {
+                    "Pane": 30
+                  }
+                }
+              }
+            }
+          },
+          "panes": {
+            "28": {
+              "cwd": "/Users/nathanchoi/Documents/Code/emberapp-worktrees/nathan-ushv-underpayment-product-routing"
+            },
+            "27": {
+              "cwd": "/Users/nathanchoi/Documents/Code/emberapp-worktrees/nathan-ushv-underpayment-product-routing/tools"
+            },
+            "30": {
+              "cwd": "/Users/nathanchoi/Documents/Code/emberapp-worktrees/nathan-ushv-underpayment-product-routing"
+            },
+            "26": {
+              "cwd": "/Users/nathanchoi/Documents/Code/emberapp-worktrees/nathan-ushv-underpayment-product-routing"
+            },
+            "29": {
+              "cwd": "/Users/nathanchoi/Documents/Code/emberapp-worktrees/nathan-ushv-underpayment-product-routing"
+            }
+          },
+          "zoomed": false,
+          "focused": 26,
+          "root_pane": 26
+        }
+      ],
+      "active_tab": 0
+    },
+    {
+      "id": "wX",
+      "custom_name": null,
+      "identity_cwd": "/Users/nathanchoi/Documents/Code/ecw-automation",
+      "public_pane_numbers": {
+        "32": 2,
+        "31": 1
+      },
+      "next_public_pane_number": 3,
+      "public_tab_numbers": [
+        1
+      ],
+      "next_public_tab_number": 2,
+      "tabs": [
+        {
+          "custom_name": "zsh",
+          "layout": {
+            "Split": {
+              "direction": "Horizontal",
+              "ratio": 0.5,
+              "first": {
+                "Pane": 31
+              },
+              "second": {
+                "Pane": 32
+              }
+            }
+          },
+          "panes": {
+            "31": {
+              "cwd": "/Users/nathanchoi/Documents/Code/ecw-automation"
+            },
+            "32": {
+              "cwd": "/Users/nathanchoi/Documents/Code/ecw-automation"
+            }
+          },
+          "zoomed": false,
+          "focused": 31,
+          "root_pane": 31
+        }
+      ],
+      "active_tab": 0
+    },
+    {
+      "id": "wS",
+      "custom_name": null,
+      "identity_cwd": "/Users/nathanchoi/.config/herdr",
+      "public_pane_numbers": {
+        "33": 1,
+        "34": 2
+      },
+      "next_public_pane_number": 4,
+      "public_tab_numbers": [
+        1
+      ],
+      "next_public_tab_number": 3,
+      "tabs": [
+        {
+          "custom_name": " nvim",
+          "layout": {
+            "Split": {
+              "direction": "Horizontal",
+              "ratio": 0.3529412,
+              "first": {
+                "Pane": 33
+              },
+              "second": {
+                "Pane": 34
+              }
+            }
+          },
+          "panes": {
+            "34": {
+              "cwd": "/Users/nathanchoi/Downloads"
+            },
+            "33": {
+              "cwd": "/Users/nathanchoi/.config/herdr"
+            }
+          },
+          "zoomed": false,
+          "focused": 33,
+          "root_pane": 33
+        }
+      ],
+      "active_tab": 0
+    }
+  ],
+  "active": 4,
+  "selected": 4,
+  "sidebar_width": null,
+  "sidebar_section_split": null,
+  "collapsed_space_keys": []
+}
